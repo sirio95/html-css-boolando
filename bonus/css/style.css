@@ -55,6 +55,11 @@ header{
     flex-basis: 10%;
 }
 
+header a:hover{
+    color:blue;
+    font-size: 17px;
+}
+
 
 
 
@@ -100,10 +105,66 @@ main{
     z-index:2;
 }
 
-.clothes:active{
-    z-index: 1;
+/* Regole Hover e Active */
+
+.product:hover{
+    width:480px;
+    height:auto;
 }
 
+
+.clothes:hover{
+    width:480px;
+    height:auto;
+    border: 1px solid black;
+}
+
+.clothes2:hover{
+    width:480px;
+    height:auto;
+    border: 1px solid black;
+}
+
+.clothes2:hover .brand, .name, .price-new, .price{
+    padding:10px 0;
+    font-size: 17px;    
+}
+.clothes:hover .brand, .name, .price-new, .price{
+    padding:10px 0;
+    font-size: 17px;   
+}
+.clothes:active .brand, .name, .price-new, .price{
+    padding:10px 0;
+    font-size: 17px; 
+}
+.clothes2:active .brand, .name, .price-new, .price{
+    padding:10px 0;
+    font-size: 17px; 
+}
+
+.clothes:active .clothes2{
+    width:480px;
+    height:auto;
+    border: 1px solid black;
+}
+
+.clothes:active{
+    z-index: 1;
+    width:480px;
+    border:none;
+}
+.clothes:active .clothes2{
+    width:480px;
+    height:auto;
+    border: 1px solid black;
+}
+
+.product:active{
+    width:480px;
+    height:auto;
+}
+
+/* Regole position absolute */
 
 figure{
     display:flex;
@@ -124,9 +185,6 @@ figure{
     top:0;
     left:0;
 }
-
-
-
 
 .sale{
     display: inline-block;
@@ -154,10 +212,11 @@ figure{
 }
 
 .heart{
+    border-radius: 25px;
     padding: 15px;
     background-color: #fff;
     position:absolute;
-    right:0;
+    right:10px;
     top:10px;
     z-index:10;
 }
@@ -184,4 +243,8 @@ h4{
 .flex.footer{
     align-items: center;
     padding:25px 0;
+}
+
+footer a:hover{
+    color:red;
 }

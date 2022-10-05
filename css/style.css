@@ -75,26 +75,61 @@ main{
 .row{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .product{
+    padding: 5px 5px;
+}
+
+.clothes{
+    width: 350px;
+    height:auto;
+    object-fit: cover;
+}
+
+figure{
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: flex-start;
 }
 
+.img2{
+    display: none;
+}
+
+.price-new{
+    color:red;
+}
+.price{
+    text-decoration:line-through;
+}
 .img1{
+}
+
+.saleper{
+    display:inline-block;
     position:relative;
 }
-.img2{
+.sale{
+    display: inline-block;
+    background-color: red;
+    color: #fff;
+    font-weight: 500;
+    padding: 5px;
     position:absolute;
-    top:0;
-    left:0;
-    display:none;
+    text-align: left;
+    
 }
-
+.green{
+    display: inline-block;
+    background-color: green;
+    color:#fff;
+    padding:5px;
+    position:absolute;
+    text-align: left;
+}
 
 /* footer */
 footer{

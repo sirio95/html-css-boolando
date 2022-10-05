@@ -104,9 +104,6 @@ main{
     z-index: 1;
 }
 
-/* .clothes:hover .clothes2{
-    display:block;    
-} */
 
 figure{
     display:flex;
@@ -128,33 +125,46 @@ figure{
     left:0;
 }
 
-.saleper{
+/* .saleper{
     position:absolute;
     left:0;
     top: 30px;
-}
+} */
 
-.hearts{
-    padding: 5px;
-    background-color: #fff;
-    position:absolute;
-    top:0;
-    right:0;
-}
 
 .sale{
     display: inline-block;
     background-color: red;
     color: #fff;
     padding: 3px;
+    position:absolute;
+    left:0;
+    bottom:100px;
+    z-index:10;
 }
 .green{
     display: inline-block;
     background-color: green;
     color:#fff;
     padding: 3px;
+    position:absolute;
+    left:50px;
+    bottom:100px;
+    z-index:10;
 }
 
+.green.solo{
+    left:0;
+}
+
+.heart{
+    padding: 15px;
+    background-color: #fff;
+    position:absolute;
+    right:0;
+    top:10px;
+    z-index:10;
+}
 
 
 /* footer */

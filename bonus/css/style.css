@@ -100,7 +100,7 @@ main{
     z-index:2;
 }
 
-.clothes:hover{
+.clothes:active{
     z-index: 1;
 }
 
@@ -135,7 +135,7 @@ figure{
     padding: 3px;
     position:absolute;
     left:0;
-    bottom:100px;
+    bottom:50px;
     z-index:10;
 }
 .green{
@@ -145,7 +145,7 @@ figure{
     padding: 3px;
     position:absolute;
     left:50px;
-    bottom:100px;
+    bottom:50px;
     z-index:10;
 }
 

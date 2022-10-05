@@ -19,11 +19,10 @@ header{
     position:fixed;
     top: 0;
     left:0;
-
+    z-index:500;
 }
 
 .logo{
-    max-width: auto;
     max-height: 30px;
 }
 
@@ -65,8 +64,10 @@ main{
     width:100%;    
     height:auto;
 }
+
 .column{
     padding: 5% 10%;
+    height:100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -105,36 +106,58 @@ figure{
 .price{
     text-decoration:line-through;
 }
+
 .img1{
+    position: relative;
+    top:0;
+    left:0;
+}
+.saleper{
+    position:absolute;
+    left:0;
+    top: 30px;
+
 }
 
-.saleper{
-    display:inline-block;
-    position:relative;
+.hearts{
+    padding: 5px;
+    background-color: #fff;
+    position:absolute;
+    top:0;
+    right:0;
+
 }
+
 .sale{
     display: inline-block;
     background-color: red;
     color: #fff;
-    font-weight: 500;
-    padding: 5px;
-    position:absolute;
-    text-align: left;
-    
+    padding: 3px;
 }
 .green{
     display: inline-block;
     background-color: green;
     color:#fff;
-    padding:5px;
-    position:absolute;
-    text-align: left;
+    padding: 3px;
 }
+
+
 
 /* footer */
 footer{
     width:100%;
+    min-height: 100px;
     background-color: #000;
 }
 
+h3{
+    color:white;
+}
+h4{
+    color:white;
+}
 
+.flex.footer{
+    align-items: center;
+    padding:25px 0;
+}

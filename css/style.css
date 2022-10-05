@@ -84,20 +84,35 @@ main{
 }
 
 .clothes{
+    position:relative;
     width: 350px;
     height:auto;
     object-fit: cover;
+    z-index:3;
 }
+
+.clothes2{
+    width: 350px;
+    height:auto;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:2;
+}
+
+.clothes:hover{
+    z-index: 1;
+}
+
+/* .clothes:hover .clothes2{
+    display:block;    
+} */
 
 figure{
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-}
-
-.img2{
-    display: none;
 }
 
 .price-new{
@@ -112,11 +127,11 @@ figure{
     top:0;
     left:0;
 }
+
 .saleper{
     position:absolute;
     left:0;
     top: 30px;
-
 }
 
 .hearts{
@@ -125,7 +140,6 @@ figure{
     position:absolute;
     top:0;
     right:0;
-
 }
 
 .sale{
